@@ -73,7 +73,7 @@ Plack::Middleware::FixIEXDomainRequestBug - Fix IE8/IE9 XDomainRequest Missing C
 
 =head1 SYNOPSIS
 
-The Following three examples encompass most likely usage
+The Following two examples encompass most likely usage
 
 =head2 Specify Mimetype
 
@@ -103,6 +103,9 @@ Use some custom code to provide a valid mimetype
         };
       $app;
     };
+
+You may also consider strategies where you apply the middleware differently
+under different mount points.
 
 =head1 DESCRIPTION
 
